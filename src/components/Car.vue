@@ -7,7 +7,7 @@
     <router-link 
       class="btn btn-sm btn-danger"
       tag="button"
-      :to="{name: 'carFull', params: {id: id}}"
+      :to="{name: 'carFull', params: {id: id}, query: {name: 'Mazda', year: 2000}}"
     >
       Full info
     </router-link>

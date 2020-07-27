@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3>Car name: ford</h3>
-    <h4>Car year: 2016</h4>
+    <h3>Car name: {{ $route.query.name }}</h3>
+    <h4>Car year: {{ $route.query.year }}</h4>
   </div>
 </template>
 
