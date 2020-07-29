@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Cars from './components/Cars'
 import Car from './components/Car'
 import CarFull from './components/CarFull'
+import error404 from './components/error404'
 
 export default new VueRouter({
   routes: [
@@ -24,6 +25,14 @@ export default new VueRouter({
           name: 'carFull'
         }
       ]
+    },
+    {
+      path: '/none',
+      redirect: '/'
+    },
+    {
+      path: '*',
+      component: error404
     }
   ],
   mode: 'history',
